@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    font-family: "Radio Canada Big", sans-serif;
+}
+
+body {
+    background-color: rgb(62, 111, 243);
+}
+
+.main-container {
+
+    margin: 150px auto;
+    padding: 20px 30px;
+
+    width: 420px;
+    height: 540px;
+
+    background-color: #FFF;
+    border-radius: 7px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.301);
+}
+
+.header {
+    margin-bottom: 35px;
+
+    font-weight: 600;
+    font-size: 25px;
+
+    border-bottom: rgb(35, 93, 207) solid 3px;
+    width: 30px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 15px;
+
+    font-size: 16px;
+    color: rgb(166, 156, 155);
+
+    border: 1.5px solid rgb(196, 191, 193);
+    border-bottom: 2px solid rgb(196, 191, 193);
+    border-radius: 5px;
+}
+
+
+#acceptance-chk-box {
+    width: 12px;
+    display: inline;
+    margin-bottom: 30px;
+}
+
+.acceptance-label {
+    color: rgb(126, 121, 123);
+    margin-left: 5px;
+}
+
+.submit-btn {
+    margin-bottom: 22px;
+
+    border: none !important;
+    background-color: rgb(62, 111, 243);
+    color: rgb(234, 232, 255);
+
+    font-size: 18px;
+}
+
+.description {
+    text-align: center;
+}
+
+.login-link {
+    text-decoration: none;
+    color: rgb(132, 166, 222);
+    font-weight: 500;
+}
