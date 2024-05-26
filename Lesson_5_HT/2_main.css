@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: rgb(50, 50, 50);
+}
+
+.Subs-Card-Header {
+    text-align: center;
+    margin: 40px 0;
+
+    font-weight: 300;
+    font-size: 80px;
+    color: #FFF;
+
+}
+
+.Subs-Card-Description {
+    text-align: center;
+
+    font-size: 20px;
+    font-weight: 300;
+    color: #FFF;
+
+    font-style: italic;
+}
+
+.Subs-Card-Container {
+    padding: 0px 120px;
+    margin: 60px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 70px;
+}
+
+.Subs-Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 70px;
+
+    background-color: rgb(87, 131, 193);
+    list-style-type: none;
+
+    box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.185);
+}
+
+.Subs-Card:nth-child(2) {
+    background-color: rgb(79, 187, 188);
+}
+
+.Subs-Card:nth-child(3) {
+    background-color: rgb(232, 61, 111);
+}
+
+.Card-Head-Container {
+    margin-top: -20px;
+    width: 80%;
+
+    background-color: #FFF;
+    border-radius: 10px;
+    border-top: 10px solid rgb(87, 131, 193);
+
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.322);
+}
+
+.Subs-Card:nth-child(2) .Card-Head-Container {
+    border-top: 10px solid rgb(79, 187, 188);
+}
+
+.Subs-Card:nth-child(3) .Card-Head-Container {
+    border-top: 10px solid rgb(232, 61, 111);
+}
+
+.Card-Header {
+    text-align: center;
+    margin-bottom: 0;
+
+    color: rgb(87, 131, 193);
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.Card-Price {
+    text-align: center;
+    margin: 30px 0 40px;
+
+    color: rgb(87, 131, 193);
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.Subs-Card:nth-child(2) .Card-Head-Container p {
+    color: rgb(79, 187, 188);
+}
+
+.Subs-Card:nth-child(3) .Card-Head-Container p {
+    color: rgb(232, 61, 111);
+}
+
+.Card-List {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.Card-List p {
+    margin-bottom: 40px;
+
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center
+}
+
+.Card-Btn {
+    padding: 30px 120px;
+    margin: 20px 0;
+
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+
+    background-color: #FFF;
+    border-radius: 10px;
+}
