@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(210 210 210);
+}
+
+.center {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+header {
+    background-color: rgb(56 56 56);
+    padding: 20px 0;
+}
+
+.logo {
+
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 700;
+    margin-right: 50px;
+
+}
+
+.header-list {
+    list-style-type: none;
+    margin: 0;
+}
+
+.float,
+nav li {
+    float: left;
+}
+
+
+nav a {
+    margin: 0px 30px;
+    color: #FFF;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+main {
+    margin-top: 40px;
+}
+
+.Lorem-Conrainer {
+    display: inline-block;
+    width: 65%;
+    background-color: rgb(255, 255, 255);
+    margin-right: 2%;
+}
+
+.Lorem-Header {
+    font-size: 35px;
+    margin: 50px 0 0 40px;
+}
+
+.Lorem-Date {
+    color: rgb(184, 184, 184);
+    margin: 10px 0 10px 40px;
+}
+
+.lorem-img {
+    width: 100%
+}
+
+.Lorem-Text {
+    text-align: left;
+    width: 90%;
+
+    font-weight: 500;
+    font-size: 20px;
+    margin: 40px 0 40px 40px;
+
+}
+
+.aside-container {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.event-container {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+    padding: 20px 10px 20px 20px;
+
+}
+
+.event-Header {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.event-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.event-list li {
+    margin: 20px 0;
+}
+
+.event-list img {
+    display: inline-block;
+    width: 16%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.event-list a {
+    display: inline-block;
+    color: #000000;
+    width: 70%;
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.note-section {
+    width: 100%;
+    background-color: #FFF;
+    margin-top: 5%;
+}
+
+.note-text {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 40px 20px;
+}
