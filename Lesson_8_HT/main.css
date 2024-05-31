@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    padding: 0px 70px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header and Nav part */
+
+header {
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+nav {
+    margin-top: 30px;
+    background-color: rgb(58, 69, 79);
+    display: flex;
+    justify-content: center;
+}
+
+.Header-Logo {
+    color: rgb(0, 221, 255);
+    font-size: 55px;
+}
+
+.Header-Logo-Part {
+    color: #000000;
+}
+
+
+
+.Header-List {
+    list-style-type: none;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+
+    width: 70%;
+    margin: 0;
+
+}
+
+.Header-List li {
+    padding: 15px 10px;
+
+    border-left: 1px solid #ffffff00;
+    border-right: 1px solid #ffffff00;
+
+    transition: 0.5s border-left, 0.5s border-right;
+
+}
+
+.Header-List li:hover {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    background-color: rgb(51, 60, 68);
+
+}
+
+.Header-List a {
+    color: #fff;
+    font-size: 18px;
+    margin: 0px 5px;
+}
+
+
+/* Main part */
+
+main {
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+/* Side bar part */
+
+.Side_bar-Container {
+    width: 25%;
+}
+
+.Side_bar-List {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+    border: 1px solid #000000;
+
+}
+
+.Side_bar-List a {
+    padding: 20px 0px 20px 40px;
+    display: block;
+    color: #484848;
+    font-size: 20px;
+
+    transition: 0.3s background-color, 0.6s padding-left;
+}
+
+.Side_bar-List a:hover {
+    background-color: lightgrey;
+    padding-left: 60px;
+}
+
+/* Image and text part */
+
+.Lorem-Container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+img {
+    transition: 0.5s scale;
+}
+
+img:hover {
+    scale: 110%;
+}
+
+.img-Container {
+    padding: 40px 0px;
+    border: 1px solid #000000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Lorem-Text {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+
+/* Footer part */
+
+.Footer-List {
+
+    display: flex;
+
+    list-style-type: none;
+    padding: 10px 0px 10px 10px;
+    margin: 0;
+}
+
+.Footer-List li {
+    margin-right: 20px;
+}
+
+.Footer-List a {
+    font-size: 20px;
+    color: #000000;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(193, 193, 193);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.coprigth {
+    margin: 0;
+}
