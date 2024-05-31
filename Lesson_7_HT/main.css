@@ -1,0 +1,65 @@
+@font-face {
+    font-family: mark-pro;
+    src: url(./media/mark-pro/MARKPRO.OTF);
+}
+
+@font-face {
+    font-family: mark-pro-bold;
+    src: url(./media/mark-pro/MARKPROBOLD.OTF);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: mark-pro, "Roboto", sans-serif;
+}
+
+.main-Container {
+    margin: 100px auto;
+    padding: 30px 20px;
+    width: 90%;
+
+
+    background-color: rgba(199, 199, 199, 0.392);
+    border-radius: 30px;
+
+    display: flex;
+}
+
+.geoligiya-list {
+    list-style-type: none;
+}
+
+.geoligiya-list li:nth-child(n+2) {
+    position: relative;
+    margin-left: 20px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.list-header {
+    font-family: mark-pro-bold, "Roboto", sans-serif;
+    ;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.geoligiya-list p {
+    font-weight: 300;
+}
+
+.geoligiya-list p::before {
+    content: "";
+    display: block;
+
+    width: 10px;
+    height: 10px;
+
+    background-color: green;
+    border-radius: 100%;
+
+    position: absolute;
+    left: -22px;
+    top: 4px;
+}
