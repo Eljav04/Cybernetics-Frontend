@@ -1,0 +1,73 @@
+.clock {
+    position: relative;
+
+    height: 500px;
+    width: 500px;
+
+    border: 5px solid green;
+
+    margin: 100px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100%;
+}
+
+.arrow-minute {
+    position: relative;
+    height: 10px;
+    width: 90%;
+
+    animation: Rotate-Minute 12s infinite linear;
+    z-index: 1;
+
+    border-radius: 5px;
+}
+
+
+
+.green {
+    width: 50%;
+    height: 100%;
+    background-color: green;
+}
+
+
+.arrow-hour {
+    position: absolute;
+    height: 10px;
+    width: 80%;
+    z-index: 50;
+
+    border-radius: 5px;
+    animation: Rotate-Minute 30s infinite linear;
+
+}
+
+.green-hour {
+    width: 50%;
+    height: 100%;
+    background-color: green;
+}
+
+.circle-green {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: green;
+    border-radius: 100%;
+    z-index: 100;
+}
+
+
+@keyframes Rotate-Minute {
+    from {
+        rotate: 0;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
