@@ -1,0 +1,110 @@
+h1 {
+    background-color: green;
+    color: #fff;
+    padding: 20px;
+
+    animation: backColorChanger 2s ease 4s alternate infinite;
+}
+
+@keyframes backColorChanger {
+    from {
+        background-color: green;
+    }
+
+    to {
+        background-color: red;
+    }
+}
+
+@keyframes identifier {
+    10% {
+        background-color: green;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    80% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+
+    position: absolute;
+
+    animation: BoxMove 6s infinite linear;
+}
+
+@keyframes BoxMove {
+    0% {
+        left: 10%;
+        top: 15%;
+        background-color: yellow;
+    }
+
+    12% {
+        left: 80%;
+        top: 15%;
+        background-color: aqua;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        left: 80%;
+        top: 15%;
+        background-color: blue;
+        transform: rotate(90deg);
+    }
+
+
+    37% {
+        left: 80%;
+        top: 70%;
+        background-color: green;
+        transform: rotate(90deg);
+    }
+
+    50% {
+        left: 80%;
+        top: 70%;
+        background-color: mediumaquamarine;
+        transform: rotate(180deg);
+    }
+
+    62% {
+        left: 10%;
+        top: 70%;
+        background-color: red;
+        transform: rotate(180deg);
+    }
+
+    75% {
+        left: 10%;
+        top: 70%;
+        background-color: orange;
+        transform: rotate(270deg);
+    }
+
+    87% {
+        left: 10%;
+        top: 15%;
+        background-color: peachpuff;
+        transform: rotate(270deg);
+    }
+
+    100% {
+        left: 10%;
+        top: 15%;
+        background-color: yellow;
+        transform: rotate(360deg);
+    }
+}
