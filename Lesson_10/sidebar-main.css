@@ -1,0 +1,125 @@
+h1 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    margin: 50px auto;
+    width: 40%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 20px rgba(232, 89, 1, 0.221);
+}
+
+.bar {
+    height: 50px;
+    width: 100%;
+
+    border: 5px solid orange;
+
+    position: relative;
+
+    overflow: hidden;
+
+    margin-bottom: 30px;
+}
+
+.block {
+    width: 50px;
+    height: 50px;
+
+    background-color: orange;
+    position: absolute;
+}
+
+#First .block {
+    animation: FirstAnimate 3s infinite linear;
+}
+
+#Second .block {
+    animation: SecondAnimate 3s steps(4) infinite;
+
+}
+
+#Third .block {
+    animation: ThirdAnimate 1.5s infinite linear alternate;
+}
+
+#Fourth .block {
+    animation: FourthAnimate 3s infinite linear alternate;
+}
+
+#Fifth .block {
+    width: 100%;
+    animation: FifthAnimate 6s infinite linear;
+}
+
+
+@keyframes FirstAnimate {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100%;
+
+    }
+}
+
+@keyframes SecondAnimate {
+    20% {
+        left: 0;
+    }
+
+    80% {
+        left: 93%;
+    }
+}
+
+@keyframes ThirdAnimate {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 95%;
+
+    }
+}
+
+
+@keyframes FourthAnimate {
+    0% {
+        left: 0;
+        width: 50px;
+    }
+
+    50% {
+        left: 45%;
+        width: 150px;
+    }
+
+    100% {
+        left: 95%;
+        width: 50px;
+    }
+}
+
+@keyframes FifthAnimate {
+    0% {
+        width: 50px;
+    }
+
+    25% {
+        width: 100%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
