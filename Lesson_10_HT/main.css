@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    font-family: "Kalam", cursive;
+}
+
+body {
+    background-color: bisque;
+}
+
+section {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.main-Container {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+}
+
+.main-Container img {
+    margin-right: 40px;
+    opacity: 0%;
+}
+
+.img_first {
+    width: 10%;
+    rotate: -30deg;
+    margin-top: 50px;
+    animation: Appear-and-move 1s forwards linear;
+}
+
+
+.img_second {
+    width: 15%;
+    rotate: -30deg;
+    animation: Appear-and-move 1s 1s forwards linear;
+}
+
+.img_third {
+    width: 15%;
+    rotate: 30deg;
+    animation: Appear-and-move 1s 2s forwards linear;
+}
+
+.img_fourth {
+    width: 10%;
+    rotate: 210deg;
+    animation: Appear-and-move 1s 3s forwards linear;
+}
+
+.img_last {
+    width: 7%;
+    opacity: 0;
+    rotate: 90deg;
+
+    animation: Appear-and-move 1s 4s forwards linear;
+}
+
+@keyframes Appear-and-move {
+    from {
+        position: relative;
+        top: 50px;
+        opacity: 0%;
+    }
+
+    to {
+        position: relative;
+        top: 0;
+        opacity: 100%;
+    }
+}
