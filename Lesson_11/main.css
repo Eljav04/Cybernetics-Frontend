@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+
+}
+
+body {
+    margin: 0;
+}
+
+.Main-Header {
+    font-size: 30px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(51, 51, 51);
+    border-collapse: collapse;
+}
+
+.Nav-Buttons {
+    padding: 15px 20px;
+    width: 15%;
+    text-align: center;
+    color: white;
+
+
+    transition: all 0.3s ease-in-out;
+}
+
+.Nav-Buttons:nth-child(2n+1) {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+
+.Nav-Buttons:hover {
+    background-color: rgba(168, 168, 168, 0.524);
+}
+
+.Background-Img-Section img {
+    height: calc(100vh - 116px);
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+
+.New-Horizons-Section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Horizons-Header {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: rgb(12, 151, 151);
+    font-weight: 300;
+}
+
+.Horizons-Card-Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 70px;
+
+    margin: 0px 50px;
+}
+
+
+.Horizons-Card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.Horizons-Img-Container {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+
+}
+
+.Horizons-Card img:hover {
+    scale: 120%;
+}
+
+.Horizons-Card p {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.Horizons-Card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Services-Description {
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+
+}
+
+.book-button {
+    background-color: #000000;
+    color: #FFF;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+.book-button:hover {
+    background-color: #000000ac;
+}
+
+footer {
+    margin: 0 auto;
+    margin-top: 50px;
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    color: rgb(14, 92, 92);
+
+    width: 80%;
+
+}
+
+footer a {
+    font-size: 20px;
+    padding: 20px 20px;
+    color: rgb(109, 107, 107);
+}
+
+footer a:hover {
+    opacity: 50%;
+}
