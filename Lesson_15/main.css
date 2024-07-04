@@ -1,0 +1,724 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+    text-decoration: none;
+}
+
+p,
+a,
+span,
+h1,
+li {
+    color: #FFF;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+body {
+    background: linear-gradient(90deg, #133E18 0%, #0F2912 100%);
+    height: 400vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 30px 50px;
+    margin-bottom: 0;
+}
+
+.Logo-Container {
+    display: flex;
+    align-items: end;
+}
+
+.Logo-Img {
+    width: 84px;
+}
+
+.Logo-Text {
+    font-size: 26px;
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.search-input {
+    width: 146px;
+    height: 53px;
+
+    margin-right: 50px;
+
+    border: 1px solid;
+
+    border-radius: 30px;
+
+    background: #FFFFFF0D;
+
+    border: 1px outset rgba(255, 255, 255, 0.5);
+
+    padding: 0;
+    padding-left: 60px;
+    padding-right: 15px;
+
+    transition: all 0.4s ease-in;
+
+    color: #FFF;
+    font-size: 14px;
+}
+
+.search-input:focus {
+    width: 220px;
+    border: 1px solid #ffffffcb;
+    outline: none;
+    color: #FFF;
+    font-size: 16px;
+
+    animation: Border-Color 0.7s 0s alternate infinite;
+}
+
+@keyframes Border-Color {
+    from {
+        border: 1px solid #ffffff72;
+    }
+
+    to {
+        border: 1px solid #fff
+    }
+}
+
+.search-button {
+    position: absolute;
+    left: 22px;
+    top: 15px;
+}
+
+.menu-text {
+    font-size: 20px;
+    font-weight: 500;
+
+    margin-right: 20px;
+}
+
+.Side-Bar {
+    position: fixed;
+    right: -250px;
+    top: 0px;
+    height: 100vh;
+    border: 1px inset #ffffff94;
+    border-right: 0px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #133e18f1, rgb(40, 66, 43));
+
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: 100;
+
+    transition: all 0.4s ease-in;
+
+    opacity: 10%;
+}
+
+.Side-Bar:hover {
+    right: 0;
+    opacity: 100%;
+}
+
+.Side-Bar-List {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+    padding: 100px 50px;
+    gap: 30px;
+}
+
+.Side-Bar-List a {
+    font-size: 25px;
+}
+
+.Side-Bar-List a:hover {
+    color: #ffffffc9;
+}
+
+
+
+.Plant-Section {
+    margin: 170px 50px;
+    margin-bottom: 0;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.Plant-Info-Header {
+    font-size: 60px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 26px;
+    line-height: 60px;
+
+
+}
+
+.Plant-Info-Description {
+    font-size: 16px;
+    font-weight: 400;
+    width: 440px;
+
+    margin-bottom: 20px;
+}
+
+.Grow-Btn {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+
+    background-color: #FFF;
+    padding: 15px 23px;
+    border-radius: 10px;
+
+    display: inline-block;
+
+    margin-right: 20px;
+
+}
+
+.Demo-Btn-Link {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+
+    margin-right: 12px;
+}
+
+.Demo-Btn {
+    width: 50px;
+}
+
+.Demo-Inside-Part {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 2px;
+}
+
+.Plant-Info-Container a {
+    vertical-align: middle;
+}
+
+
+.Mainter-Container {
+    width: 330px;
+    position: relative;
+    padding-left: 25px;
+
+    margin-top: 80px;
+    background-color: #ffffff0f;
+    border: 1px inset #ffffffb2;
+    border-radius: 12px;
+
+    margin-bottom: 17px;
+}
+
+
+.Garden-Status {
+    font-size: 14px !important;
+    padding: 5px 8px;
+    margin: 0;
+    display: inline-block;
+
+    background-color: #066400;
+    border-radius: 4px;
+    position: absolute;
+
+    top: -14px;
+}
+
+
+.Maintainer-Header {
+    margin-top: 30px;
+}
+
+.Maintainer-Rate::after {
+    content: url("./data2/Figma Projects_ Website UI Design Lessons for Beginners _ Web Design tut (Community) (7)/Star 3.svg");
+
+}
+
+.Seporator {
+    margin: 0 20px;
+}
+
+.Maintainer-Rate-Count {
+    position: relative;
+}
+
+.Maintainer-Rate-Count::after {
+    content: url("./data2/Figma Projects_ Website UI Design Lessons for Beginners _ Web Design tut (Community) (7)/emoji\(3\)\ 1.svg");
+
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+.Maintainer-Info {
+    margin-bottom: 14px;
+    position: relative;
+}
+
+.Garden-Maintaner-Img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.Center-Green-Img {
+    position: absolute;
+    top: 0;
+
+    left: 32%;
+    width: 650px;
+}
+
+.Garden-Dots-Seperator {
+    margin-bottom: 34px;
+}
+
+.Links-List {
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.Products-Section {
+    margin-top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+}
+
+
+
+.Products-List-Header {
+    font-size: 32px;
+
+    display: inline-block;
+    position: relative;
+
+}
+
+.Products-List-Header::before {
+    content: "";
+    background-color: #FFF;
+    display: block;
+    height: 1px;
+    width: 35px;
+
+}
+
+.Products-List-Header::after {
+    content: "";
+    background-color: #FFF;
+    display: block;
+    height: 1px;
+    width: 35px;
+
+    position: absolute;
+    right: 0;
+}
+
+.Plants-List {
+
+    width: 90%;
+
+    padding: 0;
+    margin: 0;
+
+    min-width: 0;
+
+    overflow: visible;
+}
+
+.Palnts-Card {
+
+    border: 1px inset #ffffffa7;
+    border-radius: 30px;
+    position: relative;
+
+    padding-top: 250px;
+    padding-left: 40px;
+
+    background-color: rgba(255, 255, 255, 0.05);
+
+    min-width: 0;
+
+    margin-right: 20px;
+    margin-top: 80px;
+
+}
+
+
+.Plant-Img {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    overflow: visible;
+}
+
+.Plant-Header,
+.Plant-Price {
+    font-size: 26px;
+}
+
+.Like-Img {
+    position: absolute;
+    right: 45px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.Bag-Img {
+    position: absolute;
+    right: 40px;
+    top: 80%;
+}
+
+.Products-Dots-Seperator {
+    margin-top: 50px;
+    width: 50px;
+}
+
+.Left-Arrow {
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.Right-Arrow {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.Customer-Rate-Section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.Customer-Rate-Container {
+    width: 90%;
+    padding: 75px 90px;
+    margin-bottom: 300px;
+
+    border: 1px inset #ffffffab;
+    border-radius: 30px;
+    background-color: #ffffff19;
+
+    display: grid;
+    grid-template-areas:
+        "Img Rate Name"
+        "Img Thought Thought"
+        "Img Decor Btn"
+    ;
+
+    gap: 0px 70px;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    align-items: center;
+
+}
+
+
+.Customer-Img {
+    grid-area: Img;
+}
+
+
+.Customer-Rate-Name {
+    font-size: 34px;
+    line-height: 25px;
+
+    grid-area: Name;
+    position: relative;
+    justify-self: end;
+}
+
+.Customer-Rate-Name::after {
+    content: "ceo xyz compny";
+    display: block;
+    font-size: 22px;
+    color: #ffffffc1;
+    margin-top: 10px;
+    left: 0;
+    font-weight: 400;
+}
+
+.Customer-Rate-Job {
+    font-size: 22px;
+    color: #ffffffcb;
+
+}
+
+.Customer-Thouhts {
+    grid-area: Thought;
+    font-size: 24px;
+}
+
+.Drop-Btn {
+    text-decoration: underline;
+
+    grid-area: Btn;
+    justify-self: end;
+
+    font-size: 22px;
+}
+
+.Customer-Rate::after {
+    content: url("./data2/Figma Projects_ Website UI Design Lessons for Beginners _ Web Design tut (Community) (7)/Star 3.svg");
+    position: relative;
+    left: 5px;
+}
+
+.Customer-Rate {
+    font-size: 24px;
+    grid-area: Rate;
+
+}
+
+.Customer-Decoration {
+    grid-area: Decor;
+}
+
+/* ---Provided-Service-Section--- */
+
+.Provided-Service-Section {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 440px 1fr;
+    gap: 100px;
+}
+
+.Garden-Girl-Img {
+    max-width: 100%;
+}
+
+.Provided-Service-List {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Service-Header {
+    font-size: 26px;
+    margin-bottom: 0;
+}
+
+.Service-Description {
+    margin-bottom: 37px;
+    margin-top: 5px;
+}
+
+
+.Provided-Services-Btn {
+    font-size: 26px;
+    padding: 22px 36px;
+    background-color: #FFF;
+    display: inline-block;
+    color: #000000;
+    border-radius: 12px;
+    vertical-align: middle;
+}
+
+.Service-Interacrin-Block {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+footer {
+    margin-top: 130px;
+    padding: 75px 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 120px;
+    background-color: rgb(40, 66, 43);
+}
+
+/* Left footer */
+.Add-Negative-Margin {
+    margin-left: -20px;
+}
+
+.footer-left-text {
+    color: #ffffffbb;
+
+}
+
+/* Middle footer */
+.footer-nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-middle p {
+    margin-top: 100px;
+}
+
+.Email-Input {
+    padding: 18px 32px;
+    min-width: 100px;
+    width: 90%;
+    font-size: 14px;
+
+    background-color: #ffffff1d;
+    border: 1px inset #fff;
+    border-radius: 10px;
+}
+
+.Email-Input:focus {
+    outline: none;
+    animation: Border-Color 0.7s 0s alternate infinite;
+    color: #ffffffbb;
+}
+
+.middle-footer-description {
+    position: relative;
+    text-align: center;
+    margin-top: 140px !important;
+}
+
+.middle-footer-description::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -50px;
+
+    transform: translate(-50%, 0);
+    display: block;
+
+    height: 1px;
+    width: 600px;
+
+
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 50.5%, rgba(255, 255, 255, 0) 100%);
+
+
+
+}
+
+
+
+
+/* Right footer */
+
+.footer-right p {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+.Footer-Link-List {
+    justify-content: start;
+}
+
+
+/* ----Parametrs for responsive---- */
+
+@media (max-width: 1300px) {
+
+    .Center-Green-Img,
+    .Customer-Img {
+        display: none;
+    }
+
+    .Customer-Rate-Container {
+        display: grid;
+        grid-template-areas:
+            "Rate Name"
+            "Thought Thought"
+            "Decor Btn"
+        ;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width:800px) {
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px;
+    }
+}
+
+/* ---Sliders parametrs--- */
+
+.slider {
+    min-width: 0;
+}
+
+
+
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+    margin-top: 30px;
+}
+
+/* .slick-arrow.slick-prev {
+    background: url(./data2/Arrows/right-arrow\ 4.svg) 0 0 no-repeat;
+    display: block;
+    height: 20px;
+    width: 20px;
+} */
+
+/* .slick-arrow.slick-next {
+    background: url(./data2/Arrows/right-arrow\ 4.svg) 0 0 no-repeat;
+    display: block;
+    height: 20px;
+    width: 20px;
+
+} */
