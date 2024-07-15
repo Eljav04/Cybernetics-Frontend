@@ -1,0 +1,68 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+section:not(:has(.Dream-Section-Header)) {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Header-Logo {
+    width: 150px;
+    height: 36px;
+    object-fit: cover;
+}
+
+.Dream-Section {
+    height: 50vh;
+    background: url(./media/Dubai/output-onlinepngtools.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 20%;
+
+}
+
+
+.Dream-Section-Header {
+    padding-top: 80px;
+    color: rgb(7, 21, 43);
+}
+
+.Why-Section {
+    padding: 0 10px;
+}
+
+.Why-Section-Img {
+    max-width: 40%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.Why-Section-Container {
+    display: flex;
+    gap: 20px;
+}
+
+.accordion {
+    width: 100%;
+}
+
+@media (max-width:998px) {
+    .Why-Section-Container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .Why-Section-Img {
+        max-width: 80%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .accordion {
+        width: 90%;
+    }
+}
