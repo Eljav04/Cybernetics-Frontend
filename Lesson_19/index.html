@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 18</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".ImgContainer-SliderBlock").slick({
+                dots: false,
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                arrows: false,
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="Header-MainNav-Container">
+                <ul>
+                    <li>
+                        <a class="Header-List-Logo" href="#">
+                            FashionHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Category
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Brand
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            FAQ's
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="Header-Client-Container">
+                <a class="Header-Client-Container-ShoppingCartBtn" href="#">
+                    <img src="./media/header/Group 1.svg" alt="">
+                    <div>
+                        <p>3</p>
+                    </div>
+                </a>
+                <a class="Header-Client-Container-Notifications" href="#">
+                    <img src="./media/header/Group 2.svg" alt="">
+                    <div></div>
+                </a>
+                <a href="#">
+                    <img src="./media/header/Rectangle 1.png" alt="">
+                </a>
+                <p class="Header-Client-Container-Greetings">
+                    Good Morning!
+                    <br>
+                    <span>
+                        Scarlet Johnson
+                    </span>
+                </p>
+                <div class="Header-BurgerContainer">
+                    <img src="./media/header/hamburger-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+        </nav>
+
+        <input class="CheckBox" type="checkbox" name="" id="">
+
+        <ul class="Header-BurgerList">
+
+            <li>
+                <a href="#">
+                    Category
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Brand
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Contact
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    FAQ's
+                </a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="ProductSection">
+            <div class="ImgContainer">
+                <img class="ImgContainer-MainImg" src="./media/section 1/Rectangle 4.png" alt="">
+                <div class="ImgContainer-SliderBlock">
+                    <div>
+                        <img src="./media/section 1/Rectangle 6.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./media/section 1/Rectangle 5.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./media/section 1/Group 4.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./media/section 1/Rectangle 8.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./media/section 1/Rectangle 6.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./media/section 1/Rectangle 5.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./media/section 1/Group 4.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./media/section 1/Rectangle 8.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="InfoContainer">
+                <ul class="InfoContainer-Paths">
+                    <li>
+                        <a href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <img src="./media/section 1/Vector.svg" alt="">
+                    </li>
+                    <li>
+                        <a href="#">
+                            Decoration
+                        </a>
+                    </li>
+                    <li>
+                        <img src="./media/section 1/Vector.svg" alt="">
+                    </li>
+                    <li>
+                        <a href="#">
+                            Furniture
+                        </a>
+                    </li>
+                    <li>
+                        <img src="./media/section 1/Vector.svg" alt="">
+                    </li>
+                    <li>
+                        <a href="#">
+                            Storage
+                        </a>
+                    </li>
+                    <li>
+                        <img src="./media/section 1/Vector.svg" alt="">
+                    </li>
+                    <li>
+                        <a href="#">
+                            Sideboard
+                        </a>
+                    </li>
+                </ul>
+                <div class="InfoContainer-ProductFeatures">
+                    <p class="InfoContainer-ProductFeatures-Header">
+                        Embrace Sideboard
+                        <br>
+                        <span>
+                            Teixeira Design Studio
+                        </span>
+                    </p>
+                    <div class="InfoContainer-ProductFeatures-InteractionBtns">
+                        <button>
+                            <img src="./media/section 1/Frame.svg" alt="">
+                            109
+                        </button>
+                        <button>
+                            <img src="./media/section 1/Frame 12.svg" alt="">
+                        </button>
+                        <button>
+                            <img src="./media/section 1/Frame 13.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="InfoContainer-ProductAtributes">
+                    <p class="InfoContainer-ProductAtributes-Price">
+                        $71.56
+                        <br>
+                        <span>
+                            $71.56
+                        </span>
+                    </p>
+                    <div class="InfoContainer-ProductAtributes-RateBlock">
+                        <div>
+                            <button>
+                                <img src="./media/section 1/Frame-1.svg" alt="">
+                                4.8
+                            </button>
+
+                            <button>
+                                <img src="./media/section 1/Frame-2.svg" alt="">
+                                67 Reviews
+                            </button>
+                        </div>
+
+                        <p>
+                            <span>
+                                93%
+                            </span>
+                            of buyers have recomended this.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="InfoContainer-ColorContainer">
+                    <p>Choose a Color</p>
+                    <ul>
+                        <li>
+                            <img src="./media/section 1/Group 5.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./media/section 1/Group 6.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./media/section 1/Group 7.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./media/section 1/Group 8.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./media/section 1/Group 9.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="InfoContainer-SizeContainer">
+                    <p>Choose a Size</p>
+                    <ul>
+                        <li>
+                            <img src="./media/section 1/Group 10.svg" alt="">
+                            Small
+                        </li>
+                        <li>
+                            <img src="./media/section 1/Group 10-1.svg" alt="">
+                            Medium
+                        </li>
+                        <li>
+                            <img src="./media/section 1/Group 10-1.svg" alt="">
+                            Large
+                        </li>
+                        <li>
+                            <img src="./media/section 1/Group 10-1.svg" alt="">
+                            Extra Large
+                        </li>
+                        <li>
+                            <img src="./media/section 1/Group 10-1.svg" alt="">
+                            XXL
+                        </li>
+                    </ul>
+                </div>
+                <div class="InfoContainer-BuyContainer">
+                    <div class="InfoContainer-BuyContainer-AmountBtn">
+                        <button>
+                            <img src="./media/section 1/-.svg" alt="">
+                        </button>
+                        5
+                        <button>
+                            <img src="./media/section 1/+.svg" alt="">
+                        </button>
+                    </div>
+                    <button class="InfoContainer-BuyContainer-BuyBtn">
+                        <img src="./media/section 1/Frame copy.svg" alt="">
+                        Add To Cart
+                    </button>
+                </div>
+                <ul class="InfoContainer-DeliveryList">
+                    <li>
+                        <img src="./media/section 1/Frame-4.svg" alt="">
+                        <p>
+                            Free Delivery
+                            <br>
+                            <span>
+                                <u>
+                                    Enter your Postal code for Delivery Availabilty
+                                </u>
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./media/section 1/Frame-4.svg" alt="">
+                        <p>
+                            Return Delivery
+                            <br>
+                            <span>
+                                Free 30 days Delivery Return. <u>Details</u>
+                            </span>
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

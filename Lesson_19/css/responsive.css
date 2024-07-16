@@ -1,0 +1,121 @@
+@media (min-width: 1550px) {
+  html {
+    font-size: 1.1px;
+  }
+}
+@media (max-width: 1240px) {
+  html {
+    font-size: 0.9px;
+  }
+  .ProductSection {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(1, auto);
+    justify-content: space-between;
+    gap: 0rem;
+  }
+  .ImgContainer-MainImg {
+    padding-left: 20rem;
+  }
+}
+@media (max-width: 1110px) {
+  html {
+    font-size: 1px;
+  }
+  nav {
+    max-width: 100%;
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+  .ProductSection {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    align-items: center;
+    gap: 40rem;
+    justify-content: center;
+  }
+  .ImgContainer-MainImg {
+    padding-left: 0rem;
+  }
+  .InfoContainer {
+    padding-right: 0rem;
+  }
+  .Header-Client-Container-Greetings {
+    display: none;
+  }
+  .Header-BurgerContainer {
+    display: flex;
+  }
+  .Header-MainNav-Container li:not(:has(.Header-List-Logo)) {
+    display: none;
+  }
+  .CheckBox {
+    display: inline-block;
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    top: 18rem;
+    right: 12rem;
+    opacity: 0%;
+  }
+  .CheckBox:checked ~ .Header-BurgerList {
+    display: flex;
+  }
+}
+@media (max-width: 620px) {
+  html {
+    font-size: 0.9px;
+  }
+  nav {
+    max-width: 100%;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  .CheckBox {
+    top: 18rem;
+    right: 5rem;
+  }
+  .ImgContainer {
+    max-width: 80%;
+  }
+  .ImgContainer-MainImg {
+    max-width: 80%;
+  }
+  .ImgContainer-SliderBlock {
+    width: 85%;
+  }
+  .ImgContainer-SliderBlock img {
+    max-width: 100%;
+    padding: 5rem;
+  }
+  .Header-List-Logo {
+    font-size: 25rem;
+    color: #0D3356;
+    font-weight: 800;
+  }
+  .Header-Client-Container img {
+    width: 50rem;
+  }
+  .InfoContainer-Paths {
+    display: none;
+  }
+  .InfoContainer-ProductFeatures {
+    flex-direction: column;
+    gap: 20rem;
+  }
+  .InfoContainer-SizeContainer ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    align-items: center;
+    justify-items: start;
+  }
+  .InfoContainer-SizeContainer ul li {
+    width: 130rem;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
