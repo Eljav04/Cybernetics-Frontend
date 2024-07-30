@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    font-family: "Radio Canada Big", sans-serif;
+}
+
+body {
+    background-color: rgb(62, 111, 243);
+}
+
+.main-container {
+
+    margin: 100px auto;
+    padding: 20px 30px;
+
+    width: 420px;
+    background-color: #FFF;
+    border-radius: 7px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.301);
+}
+
+.header {
+    margin-bottom: 35px;
+
+    font-weight: 600;
+    font-size: 25px;
+
+    border-bottom: rgb(35, 93, 207) solid 3px;
+    width: 30px;
+}
+
+input,
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 15px;
+
+    font-size: 16px;
+    color: rgb(166, 156, 155);
+
+    border: 1.5px solid rgb(196, 191, 193);
+    border-bottom: 2px solid rgb(196, 191, 193);
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+#acceptance-chk-box {
+    width: 12px;
+    display: inline;
+    margin-bottom: 30px;
+}
+
+.acceptance-label {
+    color: rgb(126, 121, 123);
+    margin-left: 5px;
+}
+
+.submit-btn {
+    margin-bottom: 22px;
+
+    border: 2px solid rgb(62, 111, 243);
+    background-color: rgb(62, 111, 243);
+    color: rgb(234, 232, 255);
+
+    font-size: 18px;
+
+    transition: all 0.3s;
+}
+
+.description {
+    text-align: center;
+}
+
+.login-link {
+    text-decoration: none;
+    color: rgb(132, 166, 222);
+    font-weight: 500;
+}
+
+button:hover {
+    color: rgb(62, 111, 243);
+    background-color: rgb(255, 255, 255);
+}
+
+table {
+    display: none;
+
+    margin: 50px auto;
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.222);
+
+}
+
+table,
+th,
+tr,
+td {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgb(54, 48, 74);
+    color: #FFF;
+    font-weight: 400;
+    text-align: left;
+    height: 60px;
+}
+
+tr:nth-child(odd) {
+    background-color: #FFF;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(245, 245, 245);
+}
+
+tr {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px 20px;
+}
+
+tbody {
+    color: rgb(130, 130, 130);
+}
+
+td,
+th {
+    text-align: center;
+}

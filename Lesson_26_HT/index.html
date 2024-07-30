@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 26</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <section class="main-section">
+
+        <div class="main-container">
+            <p class="header">
+                Registration
+            </p>
+
+            <form class="form-container">
+
+                <input type="text" name="" id="name_input" placeholder="Enter your name">
+                <input type="text" name="" id="surname_input" placeholder="Enter your surname">
+                <input type="text" name="" id="age_input" placeholder="Enter your age">
+                <input type="text" name="" id="number_input" placeholder="Enter phone number">
+            </form>
+            <button id="submit_button" class="submit-btn" onclick="Submit_and_AppendUsers()">
+                Register Now
+            </button>
+            <button id="show_button" onclick="Show_Or_Close()" class="submit-btn">
+                Show All Users
+            </button>
+
+            <p class="description">
+                Already have an account?
+
+                <a class="login-link" href="https://en.wikipedia.org/wiki/Schizophrenia" target="_blank">
+                    Login now
+                </a>
+
+            </p>
+
+
+        </div>
+        <table>
+            <thead>
+                <tr style="border-top-left-radius: 10px;">
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Age</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
