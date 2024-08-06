@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task 29</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pangolin&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <input type="text" class="header outlineOff">
+        <button id="GetDataBtn">
+            GET DATA
+        </button>
+    </header>
+
+    <main>
+
+
+        <section>
+            <ul class="Big-Cards-Container">
+                <li class="Big-Card">
+                    <input type="text" class="Big-Card-Header outlineOff" placeholder="Undefined">
+                    <button class="SmallCards_AddBtn">
+                        Add New Card
+                    </button>
+                    <button class="CloseBtn">
+                        +
+                    </button>
+                </li>
+
+                <button id="BigCard-AddBtn">
+                    +
+                </button>
+            </ul>
+
+        </section>
+        <section class="ExamplesSection">
+            <div id="SmallCard-Exmpl">
+                <ul class="Small-Card">
+                    <textarea class="Small-Card-TextArea outlineOff" name="" id="" rows="2" cols="1"
+                        placeholder="Example text"></textarea>
+                    <ul class="Icons-List">
+                        <li>
+                            <img class="Justify-Icon" src="./img 2/justify.png" alt="">
+                        </li>
+
+                        <li>
+                            <img class="checkbox-Icon" src="./img 2/checkbox.png" alt="">
+                            <span>4/8</span>
+                        </li>
+                        <li>
+                            <img class="attach-icon" src="./img 2/attach copy.png" alt="">
+                            <span>2</span>
+                        </li>
+
+                        <li>
+                            <img class="comments-Icon" src="./img 2/comments.png" alt="">
+                            <span>4</span>
+                        </li>
+
+                        <li>
+                            <img class="man_1-Icon" src="./img 2/man_1.png" alt="">
+                        </li>
+
+                    </ul>
+                    <button class="CloseBtn">
+                        +
+                    </button>
+
+
+                </ul>
+            </div>
+
+            <div id="BigCard-Exampl">
+                <li class="Big-Card">
+                    <input type="text" class="Big-Card-Header outlineOff" placeholder="Undefined">
+                    <button class="SmallCards_AddBtn">
+                        Add New Card
+                    </button>
+                    <button class="CloseBtn">
+                        +
+                    </button>
+                </li>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
