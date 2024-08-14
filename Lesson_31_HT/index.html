@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 31</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="Calculator-Section">
+        <div class="BG-BlurShadow"></div>
+        <div class="Calculator-Container">
+            <button class="HistoryBtn">
+                <img src="./img/history-svgrepo-com.svg" alt="">
+            </button>
+            <p class="PrevOut_Area">
+                Calculator is ready
+            </p>
+            <input type="text" name="" id="IntOut_Area" disabled>
+            <ul class="Additional-Operators">
+                <li>
+                    <button class="AdditionalOperatorsBtn">
+                        √
+                    </button>
+                </li>
+                <li>
+                    <button class="AdditionalOperatorsBtn">
+                        ^
+                    </button>
+                </li>
+            </ul>
+            <div class="MainOperators-Container">
+                <button id="AllClearBtn">
+                    Ac
+                </button>
+                <button id="ClearBtn">
+                    <img src="./img/Vector.svg" alt="">
+                </button>
+                <button class="AriphmeticOperator">
+                    %
+                </button>
+                <button class="AriphmeticOperator">
+                    /
+                </button>
+                <button class="NumberBtn">
+                    7
+                </button>
+                <button class="NumberBtn">
+                    8
+                </button>
+                <button class="NumberBtn">
+                    9
+                </button>
+                <button class="AriphmeticOperator" style="padding-top: 12rem;">
+                    *
+                </button>
+                <button class="NumberBtn">
+                    4
+                </button>
+                <button class="NumberBtn">
+                    5
+                </button>
+                <button class="NumberBtn">
+                    6
+                </button>
+                <button class="AriphmeticOperator">
+                    -
+                </button>
+                <button class="NumberBtn">
+                    1
+                </button>
+                <button class="NumberBtn">
+                    2
+                </button>
+                <button class="NumberBtn">
+                    3
+                </button>
+                <button class="AriphmeticOperator">
+                    +
+                </button>
+
+            </div>
+            <div class="ZeroAndEqual-Container">
+                <button class="NumberBtn" id="ZeroBtn">
+                    0
+                </button>
+                <button class="NumberBtn" style="padding-bottom: 20rem;">
+                    .
+                </button>
+                <button id="EqualBtn">
+                    =
+                </button>
+            </div>
+        </div>
+        <div class="History-Container">
+            <div class="History-Container-Buttons">
+                <button id="ClearHistoryBtn">Clear History</button>
+                <button id="CloseHistoryBtn"><span>+</span></button>
+            </div>
+            <ul class="HistoryElement-Container">
+                <li class="HistoryElmentCard" style="display: none;">
+                    <p class="HistoryElementCount">
+                    </p>
+                    <button class="HistoryElement">
+                        <p class="HistoryElementRequest">
+
+                        </p>
+                        <p class="HistoryElementAnswer">
+
+                        </p>
+                    </button>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <script src="./index.js" type="module"></script>
+    <script src="./history.js"></script>
+</body>
+
+</html>

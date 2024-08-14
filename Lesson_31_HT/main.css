@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 1px;
+    height: 150vh;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #A0D7FF;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+button:active {
+    scale: 0.90;
+}
+
+
+
+.Calculator-Section {
+    margin: 20rem auto;
+
+    width: 375rem;
+    position: relative;
+}
+
+.Calculator-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+    padding-top: 100rem;
+    /* Must be deleted */
+
+    background: linear-gradient(167.27deg, #F7F8FB -5.94%, rgba(247, 248, 251, 0.19) 103.62%);
+    backdrop-filter: blur(51px);
+    border-radius: 39px;
+
+}
+
+.BG-BlurShadow {
+    position: absolute;
+    z-index: 1;
+
+    width: 357rem;
+    height: 835rem;
+
+    background: rgba(0, 34, 84, 0.55);
+    filter: blur(61.5px);
+    border-radius: 39px;
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+
+}
+
+.HistoryBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 20rem;
+    right: 20rem;
+
+    height: 40rem;
+    width: 40rem;
+
+    background-color: #00000000;
+    border: none;
+}
+
+.HistoryBtn img {
+    height: 40rem;
+    width: 40rem;
+
+    filter: brightness(0) saturate(100%) invert(84%) sepia(5%) saturate(912%) hue-rotate(171deg) brightness(79%) contrast(93%);
+}
+
+.PrevOut_Area,
+.HistoryElementRequest {
+    opacity: 0%;
+
+    margin: 0;
+    margin-right: 30rem;
+    align-self: flex-end;
+    font-size: 24rem;
+    color: #818181;
+
+}
+
+.PrevOut_Area span,
+.HistoryElementRequest span {
+    color: #109DFF;
+}
+
+#IntOut_Area {
+    padding: 0rem 16rem;
+    margin-bottom: 50rem;
+
+    font-size: 48rem;
+    background-color: #00000000;
+    width: 100%;
+    font-weight: 500;
+    border: none;
+    text-align: right;
+    color: #424242;
+
+}
+
+#IntOut_Area:focus {
+    outline: none;
+}
+
+.Additional-Operators {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20rem;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 16rem;
+
+}
+
+.Additional-Operators button {
+    display: block;
+    width: 144rem;
+    height: 40rem;
+
+    background: linear-gradient(129.7deg, rgba(255, 255, 255, 0.6) -9.69%, rgba(255, 255, 255, 0.4) 114.23%);
+    backdrop-filter: blur(6px);
+    border-radius: 16px;
+    border: none;
+
+    font-size: 20rem;
+    font-weight: 500;
+    color: #4894dbc7;
+
+    border: 1px solid #ffffff81;
+
+}
+
+
+
+.MainOperators-Container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20rem;
+}
+
+.MainOperators-Container button,
+.NumberBtn,
+#EqualBtn,
+.PointBtn {
+    background: linear-gradient(129.7deg, rgba(255, 255, 255, 0.6) -9.69%, rgba(255, 255, 255, 0.4) 114.23%);
+    border-radius: 16px;
+    width: 62rem;
+    height: 62rem;
+
+    font-size: 32rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #ffffff;
+    border: 1px solid #ffffff81;
+
+}
+
+#AllClearBtn {
+    color: #B7C9DD !important;
+}
+
+#ClearBtn img {
+    filter: brightness(0) saturate(100%) invert(76%) sepia(39%) saturate(138%) hue-rotate(171deg) brightness(101%) contrast(83%);
+}
+
+.AriphmeticOperator {
+    background: linear-gradient(203.57deg, #ADD8FF -8.99%, rgba(173, 216, 255, 0.28) 111.42%) !important;
+    box-shadow: inset 0px 0px 9px rgba(255, 255, 255, 0.43) !important;
+    color: #4894dbc7 !important;
+}
+
+.ZeroAndEqual-Container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20rem;
+    margin-top: 30rem;
+    margin-bottom: 35rem;
+}
+
+#ZeroBtn {
+    width: 144rem;
+}
+
+.Point {
+    display: block;
+    height: 5rem;
+    width: 5rem;
+    background-color: #FFF;
+    border-radius: 100%;
+}
+
+#EqualBtn {
+    background: #19ACFF;
+    box-shadow: -5rem 9rem 23rem rgba(0, 163, 255, 0.65), inset -3rem 4rem 11rem #B0DFFF;
+}
+
+.History-Container {
+    position: absolute;
+    opacity: 0%;
+    z-index: 50;
+
+    width: 375rem;
+
+    padding: 20rem;
+    padding-top: 10rem;
+
+    background: linear-gradient(167.27deg, #F7F8FB -5.94%, rgba(247, 248, 251, 0.19) 103.62%);
+    border-radius: 39px;
+    top: 0;
+
+}
+
+.History-Container-Buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.History-Container-Buttons button {
+    background-color: #00000000;
+    border: none;
+
+    font-size: 18rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.471);
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+#CloseHistoryBtn span {
+    rotate: 45deg;
+    font-size: 35rem;
+    font-weight: 400;
+}
+
+.HistoryElement-Container {
+    overflow: auto;
+    max-height: 630rem;
+}
+
+
+.HistoryElmentCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 10rem;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.277);
+}
+
+.HistoryElement {
+    background-color: #00000000;
+    border: none;
+}
+
+.HistoryElementCount {
+    font-size: 20rem;
+    margin: 0;
+    color: #000000c6;
+}
+
+.HistoryElement p {
+    max-width: 300rem;
+    word-break: break-all;
+    margin: 0;
+    text-align: end;
+}
+
+.HistoryElementRequest {
+    font-size: 20rem;
+    opacity: 100%;
+}
+
+.HistoryElementAnswer {
+    color: #424242;
+    font-weight: 500;
+    font-size: 25rem;
+}
