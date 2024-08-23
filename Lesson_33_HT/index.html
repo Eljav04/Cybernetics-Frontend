@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 33</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <h1 class="SectionHeader">
+            Exchange Rates
+        </h1>
+
+        <p class="SectionDescription">
+            Selected currency
+        </p>
+
+        <div class="SelectedCurrencyContainer">
+            <div class="CurrancyInfoContainer">
+                <img class="currency_img" src="./media/circle-flag-of-azerbaijan-free-png.png" alt="">
+                <span>
+                    AZN - Azerbaijani manat
+                </span>
+            </div>
+            <input type="number" name="" id="SelectedCurrencyRate">
+        </div>
+
+        <p class="ConvertedCurrency_Header">
+            Converted currency
+        </p>
+
+        <table class="ConvertedCurrancyTable">
+            <thead>
+                <tr class="ConvertedCurrancyTable_Header">
+                    <th>
+                        Currency
+                    </th>
+                    <th>
+                        Rate
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="ConvertedCurrancyTable_Row">
+                    <td>
+                        <div class="CurrancyInfoContainer">
+                            <img class="currency_img" src="./media/United-states_flag_icon_round.svg.png" alt="">
+                            <span>
+                                USD - American dollar
+                            </span>
+                        </div>
+                    </td>
+                    <td id="USD_Currency">
+                        0.7843984
+                    </td>
+                </tr>
+                <tr class="ConvertedCurrancyTable_Row">
+                    <td>
+                        <div class="CurrancyInfoContainer">
+                            <img class="currency_img" src="./media/org-eu-circle-01.png" alt="">
+                            <span>
+                                EUR - Euro
+                            </span>
+                        </div>
+                    </td>
+                    <td id="EUR_Currency">
+                        0.7843984
+                    </td>
+                </tr>
+                <tr class="ConvertedCurrancyTable_Row">
+                    <td>
+                        <div class="CurrancyInfoContainer">
+                            <img class="currency_img"
+                                src="./media/canada-flat-rounded-flag-with-transparent-background-free-png Background Removed.png"
+                                alt="">
+                            <span>
+                                CAD - Canadian dollar
+                            </span>
+                        </div>
+                    </td>
+                    <td id="CAD_Currency">
+                        0.7843984
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <ul class="AdditonalContainer">
+            <li>
+                <button class="AdditonalContainerBtn">
+                    <span>+</span>
+                    Add Currency
+                </button>
+            </li>
+            <li class="AdditonalContainer_UpdInfo">
+                Last updated: 26-05-2024 - 21:30 UTC
+            </li>
+        </ul>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
